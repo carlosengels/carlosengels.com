@@ -1,11 +1,11 @@
 #title {
-    font-family: 'Qwitcher Grypen', cursive;
+    font-family: 'Antonio', sans-serif;
     font-size:xx-large;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 #main_body {
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 }
 
 #profile-image {
@@ -15,17 +15,17 @@
     margin-right: 25px;
 }
 
-body {
+#header {
     font-family: 'Antonio', sans-serif;
-    font-weight: 400;
-    background-image: url("images/camping_1.jpg");
-    background-position:unset ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: large;
     position:relative;
 }
 
-body:hover{
-    color:
+body {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    position:relative;
 }
 
