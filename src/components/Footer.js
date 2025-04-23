@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/carlosengels"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
@@ -69,7 +69,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-4">
               <li>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:hello@carlosengels.com"
                   className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
                 >
                   Email

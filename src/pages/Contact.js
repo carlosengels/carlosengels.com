@@ -143,7 +143,7 @@ const Contact = () => {
               </svg>
             </a>
             <a
-              href="https://github.com/carlosengels"
+              href="https://github.com/carlosengels/carlosengels.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
