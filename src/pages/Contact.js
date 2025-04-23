@@ -33,6 +33,9 @@ const Contact = () => {
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500 dark:text-gray-300">
             Have a question or want to work together? Feel free to reach out!
           </p>
+          <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500 dark:text-gray-300">
+            Email: <a href="mailto:hello@carlosengels.com" className="text-primary-600 hover:text-primary-700">hello@carlosengels.com</a>
+          </p>
         </div>
       </div>
 
@@ -140,7 +143,7 @@ const Contact = () => {
               </svg>
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/carlosengels"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
