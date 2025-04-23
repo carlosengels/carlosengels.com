@@ -23,8 +23,8 @@ A modern, responsive portfolio website built with React and TailwindCSS.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/carlosengels-portfolio.git
-cd carlosengels-portfolio
+git clone git@github.com:carlosengels/carlosengels.com.git
+cd carlosengels.com
 ```
 
 2. Install dependencies:
