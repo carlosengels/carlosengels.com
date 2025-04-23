@@ -3,23 +3,26 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: 'Cloud Infrastructure Automation',
-      description: 'Implemented Terraform modules for AWS infrastructure, reducing deployment time by 40% and ensuring consistent environments across development, staging, and production.',
-      technologies: ['AWS', 'Terraform', 'Kubernetes', 'GitLab CI/CD'],
-      image: '/images/cloud-infra.jpg',
+      title: 'CLI Network Port Scanner',
+      description: 'A multithreaded CLI tool for determining TCP/UDP port status on given IP addresses. Features include saving multiple host profiles with scan results in JSON format, customizable port ranges, and connection timeouts. Includes a user-friendly menu interface for managing scans and results.',
+      technologies: ['Java', 'JSON', 'Multithreading', 'Socket Programming'],
+      image: '/images/port-scanner.jpg',
+      link: 'https://github.com/carlosengels/cli_network_port_scanner'
     },
     {
-      title: 'CI/CD Pipeline Optimization',
-      description: 'Designed and implemented GitLab CI/CD pipelines for automated testing, building, and deployment, resulting in a 30% reduction in deployment failures.',
-      technologies: ['GitLab', 'Docker', 'Kubernetes', 'Python'],
-      image: '/images/cicd-pipeline.jpg',
+      title: 'CLI Password Generator',
+      description: 'A command-line tool for generating secure, random passwords. Built with Java, this utility provides customizable password generation options and secure random number generation.',
+      technologies: ['Java', 'CLI', 'Security'],
+      image: '/images/password-generator.jpg',
+      link: 'https://github.com/carlosengels/cli-pw-generator'
     },
     {
-      title: 'Monitoring & Observability',
-      description: 'Set up comprehensive monitoring using Dynatrace and Prometheus, improving system reliability and reducing mean time to resolution by 50%.',
-      technologies: ['Dynatrace', 'Prometheus', 'Grafana', 'AWS CloudWatch'],
-      image: '/images/monitoring.jpg',
-    },
+      title: 'Daily GitHub Counter',
+      description: 'A system service that automatically updates a daily counter on GitHub. Implemented with Python and Go, featuring systemd service integration and AWS S3 integration for persistent storage.',
+      technologies: ['Python', 'Go', 'Shell', 'AWS S3', 'systemd'],
+      image: '/images/daily-counter.jpg',
+      link: 'https://github.com/carlosengels/daily_counter'
+    }
   ];
 
   return (
@@ -31,7 +34,7 @@ const Projects = () => {
             Featured Work
           </p>
           <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500 dark:text-gray-300">
-            A selection of projects showcasing my expertise in cloud infrastructure, automation, and reliability engineering.
+            A collection of my open-source projects showcasing my expertise in software development and system administration.
           </p>
         </div>
       </div>
@@ -68,6 +71,16 @@ const Projects = () => {
                           ))}
                         </div>
                       </div>
+                      <div className="mt-4">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
+                        >
+                          View on GitHub →
+                        </a>
+                      </div>
                     </div>
                     <div className="mt-4 md:mt-0 md:w-1/3 md:pl-8">
                       <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
@@ -94,21 +107,10 @@ const Projects = () => {
             <div className="bg-gray-50 dark:bg-gray-800 overflow-hidden shadow rounded-lg">
               <div className="px-4 py-5 sm:p-6">
                 <h3 className="text-lg font-medium text-gray-900 dark:text-white">
-                  Infrastructure as Code Templates
+                  System Administration Tools
                 </h3>
                 <p className="mt-2 text-base text-gray-500 dark:text-gray-300">
-                  Reusable Terraform modules for common AWS infrastructure patterns.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 dark:bg-gray-800 overflow-hidden shadow rounded-lg">
-              <div className="px-4 py-5 sm:p-6">
-                <h3 className="text-lg font-medium text-gray-900 dark:text-white">
-                  Automated Testing Framework
-                </h3>
-                <p className="mt-2 text-base text-gray-500 dark:text-gray-300">
-                  Custom testing framework for infrastructure validation and compliance checks.
+                  A collection of shell and Go scripts for system administration tasks and automation.
                 </p>
               </div>
             </div>

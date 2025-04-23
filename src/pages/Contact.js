@@ -7,6 +7,7 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+  const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,10 +17,28 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setStatus('sending');
+
+    try {
+      const response = await fetch('https://api.carlosengels.com/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    }
   };
 
   return (
@@ -42,6 +61,16 @@ const Contact = () => {
       <div className="bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="max-w-3xl mx-auto">
+            {status === 'success' && (
+              <div className="mb-4 p-4 bg-green-100 text-green-700 rounded-md">
+                Thank you for your message! I'll get back to you soon.
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="mb-4 p-4 bg-red-100 text-red-700 rounded-md">
+                There was an error sending your message. Please try again or email me directly.
+              </div>
+            )}
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -56,6 +85,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                     required
+                    disabled={status === 'sending'}
                   />
                 </div>
               </div>
@@ -73,6 +103,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                     required
+                    disabled={status === 'sending'}
                   />
                 </div>
               </div>
@@ -90,6 +121,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                     required
+                    disabled={status === 'sending'}
                   />
                 </div>
               </div>
@@ -107,6 +139,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                     required
+                    disabled={status === 'sending'}
                   />
                 </div>
               </div>
@@ -114,9 +147,10 @@ const Contact = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                  className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50"
+                  disabled={status === 'sending'}
                 >
-                  Send Message
+                  {status === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
               </div>
             </form>
