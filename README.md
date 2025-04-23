@@ -19,6 +19,43 @@ A modern, responsive portfolio website built with React and TailwindCSS.
 - HeadlessUI
 - Heroicons
 
+## Prerequisites
+
+### Ubuntu/Debian
+1. Install Node.js and npm:
+```bash
+sudo apt update
+sudo apt install nodejs npm
+```
+
+2. Verify the installation:
+```bash
+node --version
+npm --version
+```
+
+### Recommended: Install using Node Version Manager (nvm)
+1. Install nvm:
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
+
+2. Reload your shell:
+```bash
+source ~/.bashrc
+```
+
+3. Install the latest LTS version of Node.js:
+```bash
+nvm install --lts
+```
+
+4. Verify the installation:
+```bash
+node --version
+npm --version
+```
+
 ## Getting Started
 
 1. Clone the repository:
