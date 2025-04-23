@@ -1,0 +1,98 @@
+import React from "react";
+
+export default function Portfolio() {
+  return (
+    <main className="min-h-screen bg-gray-900 text-white font-sans">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center justify-center h-screen text-center px-4">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Carlos Engels</h1>
+        <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
+          Site Reliability Engineer | AWS & Kubernetes | CI/CD | Terraform
+        </h2>
+        <a
+          href="/Carlos_Engels_Resume.pdf"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg transition"
+        >
+          Download Resume
+        </a>
+      </section>
+
+      {/* About Section */}
+      <section className="max-w-3xl mx-auto py-16 px-6">
+        <h3 className="text-3xl font-semibold mb-4">About Me</h3>
+        <p className="text-gray-300 leading-relaxed">
+          I’m a Site Reliability Engineer at Vertafore with a passion for cloud infrastructure, automation, and system reliability. I specialize in AWS, Kubernetes, Terraform, and CI/CD with GitLab. With a background in IT support and development, I bring a unique blend of engineering expertise and operational insight.
+        </p>
+      </section>
+
+      {/* Skills Section */}
+      <section className="bg-gray-800 py-16 px-6">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="text-3xl font-semibold mb-8 text-center">Skills</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+            {[
+              "AWS",
+              "Kubernetes",
+              "Terraform",
+              "GitLab",
+              "CI/CD",
+              "Dynatrace",
+              "Linux",
+              "Windows Server",
+              "Python",
+              "Go",
+              "Java",
+              "SQL",
+              "REST APIs",
+              "Git"
+            ].map(skill => (
+              <div key={skill} className="bg-gray-700 p-4 rounded-xl shadow-md">
+                {skill}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="max-w-5xl mx-auto py-16 px-6">
+        <h3 className="text-3xl font-semibold mb-8 text-center">Projects</h3>
+        <div className="space-y-8">
+          <div>
+            <h4 className="text-2xl font-bold mb-2">CI/CD Pipeline Automation</h4>
+            <p className="text-gray-300">
+              Streamlined deployment workflows using GitLab CI/CD, reducing release times and improving system reliability at Vertafore.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-bold mb-2">Terraform Infrastructure Modules</h4>
+            <p className="text-gray-300">
+              Built reusable Terraform modules to automate AWS infrastructure provisioning and configuration across multiple environments.
+            </p>
+          </div>
+          <div>
+            <h4 className="text-2xl font-bold mb-2">Monitoring & Alerting with Dynatrace</h4>
+            <p className="text-gray-300">
+              Enhanced observability and incident response by integrating Dynatrace with proactive alerting rules and dashboards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-gray-800 py-16 px-6 text-center">
+        <h3 className="text-3xl font-semibold mb-4">Let's Connect</h3>
+        <p className="text-gray-300 mb-6">
+          Reach out via <a className="text-blue-400 underline" href="mailto:your.email@example.com">your.email@example.com</a>
+        </p>
+        <a
+          href="https://www.linkedin.com/in/cloud-solutions-carlos/"
+          className="text-blue-400 underline"
+          target="_blank"
+        >
+          LinkedIn Profile
+        </a>
+      </section>
+    </main>
+  );
+}
