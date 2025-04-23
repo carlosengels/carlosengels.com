@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div className="bg-white dark:bg-gray-900">
-      {/* Hero section */}
+      {/* Hero Section */}
       <div className="relative">
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white dark:bg-gray-900 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -15,8 +15,9 @@ const Home = () => {
                   <span className="block text-primary-600">Site Reliability Engineer</span>
                 </h1>
                 <p className="mt-3 text-base text-gray-500 dark:text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Specializing in cloud infrastructure, automation, and reliability engineering.
-                  Building scalable and resilient systems with AWS, Kubernetes, and Terraform.
+                  Linux systems expert specializing in cloud infrastructure, automation, and reliability engineering. 
+                  Experienced in building and maintaining scalable systems with AWS, Kubernetes, 
+                  and modern DevOps practices.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
@@ -42,7 +43,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Skills section */}
+      {/* Skills Section */}
       <div className="py-12 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
@@ -50,58 +51,55 @@ const Home = () => {
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Technical Expertise
             </p>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 lg:mx-auto">
+              A comprehensive skill set focused on Linux systems, cloud infrastructure, and automation
+            </p>
           </div>
 
           <div className="mt-10">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+              {/* Linux & Systems */}
+              <div className="relative">
+                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
+                  </svg>
+                </div>
+                <div className="ml-16">
+                  <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">Linux & Systems</h3>
+                  <p className="mt-2 text-base text-gray-500 dark:text-gray-300">
+                    Linux Administration, System Architecture, Performance Tuning, Security Hardening
+                  </p>
+                </div>
+              </div>
+
               {/* Cloud & Infrastructure */}
-              <div className="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
-                <div className="px-4 py-5 sm:p-6">
-                  <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
-                    Cloud & Infrastructure
-                  </h3>
-                  <div className="mt-2 max-w-xl text-sm text-gray-500 dark:text-gray-300">
-                    <ul className="list-disc list-inside">
-                      <li>AWS Services</li>
-                      <li>Kubernetes</li>
-                      <li>Terraform</li>
-                      <li>Docker</li>
-                    </ul>
-                  </div>
+              <div className="relative">
+                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  </svg>
+                </div>
+                <div className="ml-16">
+                  <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">Cloud & Infrastructure</h3>
+                  <p className="mt-2 text-base text-gray-500 dark:text-gray-300">
+                    AWS, Kubernetes, Docker, Terraform, Infrastructure as Code
+                  </p>
                 </div>
               </div>
 
               {/* DevOps & Automation */}
-              <div className="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
-                <div className="px-4 py-5 sm:p-6">
-                  <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
-                    DevOps & Automation
-                  </h3>
-                  <div className="mt-2 max-w-xl text-sm text-gray-500 dark:text-gray-300">
-                    <ul className="list-disc list-inside">
-                      <li>CI/CD Pipelines</li>
-                      <li>GitLab</li>
-                      <li>Jenkins</li>
-                      <li>Ansible</li>
-                    </ul>
-                  </div>
+              <div className="relative">
+                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white">
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
                 </div>
-              </div>
-
-              {/* Monitoring & Reliability */}
-              <div className="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
-                <div className="px-4 py-5 sm:p-6">
-                  <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
-                    Monitoring & Reliability
-                  </h3>
-                  <div className="mt-2 max-w-xl text-sm text-gray-500 dark:text-gray-300">
-                    <ul className="list-disc list-inside">
-                      <li>Dynatrace</li>
-                      <li>Prometheus</li>
-                      <li>Grafana</li>
-                      <li>CloudWatch</li>
-                    </ul>
-                  </div>
+                <div className="ml-16">
+                  <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">DevOps & Automation</h3>
+                  <p className="mt-2 text-base text-gray-500 dark:text-gray-300">
+                    GitLab CI/CD, Shell Scripting, Python, Infrastructure Automation
+                  </p>
                 </div>
               </div>
             </div>
