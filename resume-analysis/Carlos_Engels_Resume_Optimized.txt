@@ -1,0 +1,53 @@
+CARLOS ENGELS
+[Your Contact Information]
+
+PROFESSIONAL SUMMARY
+Site Reliability Engineer with [X] years of experience in cloud infrastructure, automation, and system reliability. Proven track record in implementing SRE practices, optimizing system performance, and ensuring high availability of production environments. Strong expertise in AWS, containerization, infrastructure as code, and CI/CD pipelines.
+
+TECHNICAL SKILLS
+• Cloud Platforms: AWS (EC2, S3, RDS, Lambda, ECS, EKS)
+• Infrastructure as Code: Terraform, CloudFormation, Puppet
+• Containerization: Docker, Kubernetes
+• CI/CD: Jenkins, CircleCI, GitLab
+• Monitoring & Logging: Prometheus, Grafana, ELK Stack
+• Programming: Python, [Other Languages]
+• Databases: MySQL, Redis, Elasticsearch
+• Message Queues: RabbitMQ, Kafka
+• Version Control: Git
+• Operating Systems: Linux (Ubuntu)
+
+PROFESSIONAL EXPERIENCE
+
+[Most Recent Company]
+Site Reliability Engineer | [Dates]
+• Oversaw platform operations from frontend to backend, ensuring 99.9% uptime
+• Designed and implemented microservices architecture using Python and Django
+• Led migration from self-hosted services to AWS cloud-managed services
+• Automated infrastructure provisioning using Terraform and CloudFormation
+• Implemented containerization strategy using Docker and Kubernetes
+• Collaborated with Security team to enhance system protection
+• Reduced manual tasks by 60% through automation scripts
+• Managed on-call rotations and incident response
+
+[Previous Company]
+[Previous Role] | [Dates]
+• [Relevant achievements and responsibilities]
+• [Focus on SRE/DevOps related tasks]
+
+EDUCATION
+[Degree] in [Field]
+[University Name] | [Year]
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect
+• [Other relevant certifications]
+
+PROJECTS
+• [Highlight relevant projects that demonstrate SRE/DevOps skills]
+• [Include metrics and outcomes]
+
+ADDITIONAL SKILLS
+• Strong understanding of computer science fundamentals
+• Experience with HashiCorp suite (Consul, Nomad, Vault)
+• Excellent problem-solving and troubleshooting abilities
+• Effective collaboration with cross-functional teams 

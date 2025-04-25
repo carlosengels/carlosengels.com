@@ -1,0 +1,32 @@
+Carlos Engels
+Arvada, Colorado
+[Date]
+
+Hiring Manager
+Eventbrite
+[Company Address]
+
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Site Reliability Engineer II position at Eventbrite. With my experience in AWS, Kubernetes, and infrastructure automation, combined with my background in building resilient cloud systems, I am excited about the opportunity to contribute to Eventbrite's platform reliability and modernization efforts.
+
+In my current role as a Site Reliability Engineer at Vertafore, I have been instrumental in supporting both on-prem and cloud-based applications while leading migration initiatives to AWS. This experience aligns perfectly with Eventbrite's need for engineers who can oversee platform operations from frontend to backend and support the transition from self-hosted services to cloud-managed services.
+
+My technical expertise includes:
+• AWS cloud architecture and services (AWS Certified Cloud Practitioner)
+• Infrastructure as Code using Terraform and Vault
+• Container orchestration with Kubernetes
+• CI/CD pipeline implementation using GitLab
+• Python programming and Linux system administration
+• Monitoring and troubleshooting complex systems
+
+What particularly excites me about this role is Eventbrite's commitment to modernizing their tech stack and the opportunity to work with Python and Django-based microservices. My experience in building scalable backend solutions and implementing automation aligns well with your team's goals of optimizing existing systems and eliminating manual work through automation.
+
+Beyond technical skills, I bring strong collaboration abilities developed through cross-functional work at Vertafore, where I've partnered with security teams to deliver secure solutions. My background in audiovisual systems engineering has also given me a unique perspective on system reliability and user experience, which I believe would be valuable in ensuring Eventbrite's platform runs efficiently and securely.
+
+I am particularly drawn to Eventbrite's people-focused engineering culture, with its emphasis on mentorship, inclusion, and continuous learning. The opportunity to contribute to open-source projects and participate in tech talks and hackathons aligns perfectly with my passion for community engagement and professional growth.
+
+I would welcome the opportunity to discuss how my skills and experience can contribute to Eventbrite's SRE team. Thank you for considering my application.
+
+Best regards,
+Carlos Engels 
