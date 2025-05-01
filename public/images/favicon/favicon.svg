@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#0ea5e9"/>
+  
+  <!-- Letters CE -->
+  <path d="M 256 128 
+           C 352 128 432 208 432 304
+           L 384 304
+           C 384 235 326 176 256 176
+           C 186 176 128 235 128 304
+           C 128 373 186 432 256 432
+           C 326 432 384 373 384 304
+           L 432 304
+           C 432 400 352 480 256 480
+           C 160 480 80 400 80 304
+           C 80 208 160 128 256 128 Z" 
+        fill="white"/>
+</svg> 
