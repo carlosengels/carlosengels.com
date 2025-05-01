@@ -23,28 +23,6 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: '65ch',
-            color: 'inherit',
-            a: {
-              color: 'inherit',
-              textDecoration: 'none',
-              fontWeight: '500',
-              '&:hover': {
-                color: '#0ea5e9',
-              },
-            },
-            strong: {
-              color: 'inherit',
-            },
-            code: {
-              color: 'inherit',
-            },
-          },
-        },
-      },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
@@ -61,7 +39,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 } 
